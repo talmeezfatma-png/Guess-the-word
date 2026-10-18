@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+   <title>Guess the Word</title>
+</head>
+!DOCTYPE html>
+<html>
+<head>
+    <title>Guess the Word</title>
+</head>
+
+<body>
+    <h1>Guess the Word!</h1>
+    <p>_ABEEH</p>
+
+    <button onclick="checkAnswer('S')">S</button>
+    <button onclick="checkAnswer('F')">F</button>
+    <button onclick="checkAnswer('L')">L</button>
+
+    <p id="result"></p>
+
+    <script>
+        function checkAnswer(letter) {
+            if (letter === 'S') {
+                document.getElementById("result").textContent = "Correct! 🎉";
+            } else {
+                document.getElementById("result").textContent = "Try again!";
+            }
+        }
+    </script>
+</body>
+</html>
